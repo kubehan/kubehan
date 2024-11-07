@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mail on </title>
+    <link>/tags/mail/</link>
+    <description>Recent content in Mail on </description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 21 Feb 2020 09:18:06 +0800</lastBuildDate>
+    <atom:link href="/tags/mail/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>阿里云25号端口禁用无法发送邮件解决办法</title>
+      <link>/288.html</link>
+      <pubDate>Fri, 21 Feb 2020 09:18:06 +0800</pubDate>
+      <guid>/288.html</guid>
+      <description>&lt;!-- raw HTML omitted --&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;pre&gt;&lt;code&gt;&amp;lt;p&amp;gt;&#xA;  安装对应的数字证书：这里请求安装网易126邮箱数字证书，也可以安装别的证书&#xA;&amp;lt;/p&amp;gt;&#xA;&#xA;&amp;lt;p&amp;gt;&#xA;  &amp;lt;strong&amp;gt;一：126邮箱证书安装&amp;lt;/strong&amp;gt;&#xA;&amp;lt;/p&amp;gt;&#xA;&#xA;&amp;lt;pre class=&amp;quot;has&amp;quot;&amp;gt;&amp;lt;code&amp;gt;mkdir -p /root/.certs/&#xD;&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;echo -n | openssl s_client -connect smtp.126.com:465 | sed -ne &amp;lsquo;/-BEGIN CERTIFICATE-/,/-END CERTIFICATE-/p&amp;rsquo; &amp;gt; ~/.certs/126.crt&#xA;certutil -A -n &amp;ldquo;GeoTrust SSL CA&amp;rdquo; -t &amp;ldquo;C,,&amp;rdquo; -d ~/.certs -i ~/.certs/126.crt&#xA;certutil -A -n &amp;ldquo;GeoTrust Global CA&amp;rdquo; -t &amp;ldquo;C,,&amp;rdquo; -d ~/.certs -i ~/.certs/126.crt&#xA;certutil -L -d /root/.certs&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

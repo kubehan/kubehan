@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Docker on </title>
+    <link>/categories/docker/</link>
+    <description>Recent content in Docker on </description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 06 Sep 2020 13:50:21 +0800</lastBuildDate>
+    <atom:link href="/categories/docker/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Docker从入门到实践.pdf</title>
+      <link>/2834.html</link>
+      <pubDate>Sun, 06 Sep 2020 13:50:21 +0800</pubDate>
+      <guid>/2834.html</guid>
+      <description>&lt;p&gt;Docker从入门到实践.pdf&lt;br&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>推荐 5 款超好用的开源 Docker 工具！</title>
+      <link>/2381.html</link>
+      <pubDate>Tue, 28 Apr 2020 00:06:53 +0800</pubDate>
+      <guid>/2381.html</guid>
+      <description>&lt;!-- raw HTML omitted --&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;p&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;免费获取一份架构资料！&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt; &lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;Redis 10亿数据量只需要100MB内存&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;！&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt; &lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;面试官问我数据库缓存一致性的四种方案！&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt; &lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;MySQL常用优化指南，及大表优化思路！&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Docker镜像之开源镜像加速--切换docker镜像源</title>
+      <link>/2191.html</link>
+      <pubDate>Thu, 09 Apr 2020 07:25:32 +0800</pubDate>
+      <guid>/2191.html</guid>
+      <description>&lt;p&gt;大家都知道，安装使用docker的时候默认的是国外的镜像源，使用起来有点难度，这里说说怎么切换docker源为国内的镜像源&lt;/p&gt;&#xA;&lt;p&gt;国内下载docker镜像大部分都比较慢，下面给大家介绍2个镜像源&lt;/p&gt;&#xA;&lt;h4 id=&#34;阿里云的镜像源&#34;&gt;阿里云的镜像源&lt;/h4&gt;&#xA;&lt;p&gt;注册阿里云用户获取镜像源：&lt;!-- raw HTML omitted --&gt;点击跳转获取加速地址&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;&#xA;&lt;p&gt;地址填写自己的专属加速地址&lt;/p&gt;&#xA;&lt;p&gt;使用的时候修改/etc/docker/daemon.json文件就可以了，&lt;/p&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;p&gt;修改保存后重启 Docker 以使配置生效&lt;/p&gt;&#xA;&lt;h4 id=&#34;docker中国官方的镜像源&#34;&gt;docker中国官方的镜像源&lt;/h4&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;p&gt;&lt;!-- raw HTML omitted --&gt;修改保存后重启 Docker 以使配置生效&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>k8s环境准备之docker（一）</title>
+      <link>/2187.html</link>
+      <pubDate>Thu, 09 Apr 2020 05:08:36 +0800</pubDate>
+      <guid>/2187.html</guid>
+      <description>&lt;h4 id=&#34;1准备docker环境&#34;&gt;1.准备docker环境&lt;/h4&gt;&#xA;&lt;p&gt;在每个节点上安装docker-ce-18.09.9&lt;/p&gt;&#xA;&lt;h2 id=&#34;下载阿里源repo文件&#34;&gt;下载阿里源repo文件&lt;/h2&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;h4 id=&#34;加速镜像源&#34;&gt;加速镜像源&lt;/h4&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;h2 id=&#34;配置网卡转发看值是否为1&#34;&gt;配置网卡转发,看值是否为1&lt;/h2&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;h2 id=&#34;若未配置需要执行如下&#34;&gt;若未配置，需要执行如下&lt;/h2&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;p&gt; &lt;/p&gt;&#xA;&lt;h4 id=&#34;2下载镜像&#34;&gt;2.下载镜像&lt;/h4&gt;&#xA;&lt;p&gt;使用docker pull的方式，下载如下镜像到各节点&lt;/p&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;p&gt;镜像下载相关学习链接：&lt;!-- raw HTML omitted --&gt;点击跳转查看&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;&#xA;&lt;h4 id=&#34;启动docker报错&#34;&gt;启动docker报错&lt;/h4&gt;&#xA;&lt;p&gt;报错分析：应该是daemo.json文件编写的时候格式发生变化&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Docker学习教程</title>
+      <link>/2070.html</link>
+      <pubDate>Mon, 30 Mar 2020 08:16:29 +0800</pubDate>
+      <guid>/2070.html</guid>
+      <description>&lt;h2 id=&#34;docker架构&#34;&gt;Docker架构&lt;/h2&gt;&#xA;&lt;h3 id=&#34;docker的基本能概念&#34;&gt;Docker的基本能概念&lt;/h3&gt;&#xA;&lt;p&gt;&lt;!-- raw HTML omitted --&gt;镜像：&lt;!-- raw HTML omitted --&gt;简而言之就相当于是一个root文件系统，提供了容器运行时所需要的程序，库，资源、配置文件及运行时准备的运行参数&lt;/p&gt;&#xA;&lt;p&gt;&lt;!-- raw HTML omitted --&gt;容器：&lt;!-- raw HTML omitted --&gt;容器是镜像运行时的实体，&lt;!-- raw HTML omitted --&gt;容器可以被创建、启动、停止、删除、暂停等&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;&#xA;&lt;p&gt;容器的本质就是一个进程。但是由与直接在宿主执行的进程有所不同，&lt;!-- raw HTML omitted --&gt;容器进程运行于属于自己的独立的命名空间。因此容器可以拥有自己的&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;root&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;文件系统、自己的网络配置、自己的进程空间，甚至自己的用户&lt;!-- raw HTML omitted --&gt; &lt;!-- raw HTML omitted --&gt;ID &lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;空间。容器内的进程是运行在一个隔离的环境里，使用起来，就好像是在一个独立于宿主的系统下操作一样。这种特性使得容器封装的应用比直接在宿主运行更加安全。也因为这种隔离的特性，很多人初学&lt;!-- raw HTML omitted --&gt; &lt;!-- raw HTML omitted --&gt;Docker &lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;时常常会混淆容器和虚拟机&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt; &lt;!-- raw HTML omitted --&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

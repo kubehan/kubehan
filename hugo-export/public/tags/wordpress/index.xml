@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Wordpress on </title>
+    <link>/tags/wordpress/</link>
+    <description>Recent content in Wordpress on </description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 10 Mar 2020 09:56:52 +0800</lastBuildDate>
+    <atom:link href="/tags/wordpress/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>密码保护：网站优化</title>
+      <link>/1335.html</link>
+      <pubDate>Tue, 10 Mar 2020 09:56:52 +0800</pubDate>
+      <guid>/1335.html</guid>
+      <description>&lt;!-- raw HTML omitted --&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;!-- raw HTML omitted --&gt;</description>
+    </item>
+    <item>
+      <title>WordPress 给网站添加备案号</title>
+      <link>/623.html</link>
+      <pubDate>Thu, 05 Mar 2020 08:29:48 +0800</pubDate>
+      <guid>/623.html</guid>
+      <description>&lt;h1 id=&#34;wordpress-给网站添加备案号&#34;&gt;WordPress 给网站添加备案号&lt;/h1&gt;&#xA;&lt;p&gt;这几天在网上搜了好多添加备案信息的，一堆不靠谱的，这里记录一下我的实际成果&lt;/p&gt;&#xA;&lt;p&gt;找到WordPress后台–&amp;gt;外观–&amp;gt;主题编辑器–&amp;gt;footer.php 添加&lt;/p&gt;&#xA;&lt;p&gt;备案号：蜀ICP备&lt;!-- raw HTML omitted --&gt;122号-1&lt;!-- raw HTML omitted --&gt;&lt;br&gt;&#xA;1&lt;br&gt;&#xA;在哪个位置添加呢？？？？&lt;br&gt;&#xA;访问你的网站然后F12查看 代码找到节点，然后在后台 ctrl+F5 在footer.php里面搜索对应的节点 添加到后面即可&lt;br&gt;&#xA;这里我的是&lt;/p&gt;&#xA;&lt;p&gt;复制上面的添加部分 把这里的信息变更为你的刷新后就行了&lt;br&gt;&#xA;—————————————&lt;br&gt;&#xA;原文链接：https://blog.csdn.net/qq_42568611/article/details/104677536&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>关于博主 on </title>
+    <link>/categories/%E5%85%B3%E4%BA%8E%E5%8D%9A%E4%B8%BB/</link>
+    <description>Recent content in 关于博主 on </description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 26 Apr 2020 08:50:29 +0800</lastBuildDate>
+    <atom:link href="/categories/%E5%85%B3%E4%BA%8E%E5%8D%9A%E4%B8%BB/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Wordpress强烈推荐的编辑器</title>
+      <link>/2316.html</link>
+      <pubDate>Sun, 26 Apr 2020 08:50:29 +0800</pubDate>
+      <guid>/2316.html</guid>
+      <description>&lt;p&gt;之前使用了各种编辑器都不尽人意，今天发现一款，非常喜欢，。推荐给大家&lt;/p&gt;&#xA;&lt;h4 id=&#34;wp-githuber-md简介&#34;&gt;WP Githuber MD简介&lt;/h4&gt;&#xA;&lt;p&gt;WP Githuber MD是一款多功能的WordPress Markdown编辑器插件，它提供了多种功能，例如Markdown编辑器、实时预览、拼写检查、图像粘贴、HTML到Markdown帮助器等。&lt;br&gt;&#xA;WP Githuber MD 兼容经典编辑器和Gutenberg编辑器，可以为单个文章启用/禁用Markdown，支持自定义文章类型，支持代码语法高亮、流程图、甘特图、KaTex、数学公式渲染、 顺序图等等。&lt;/p&gt;&#xA;&lt;p&gt;WP Githuber MD 是中国台湾开发者开发的，所以自带简体和繁体中文。&lt;/p&gt;&#xA;&lt;h4 id=&#34;wp-githuber-md-的运行机制&#34;&gt;WP Githuber MD 的运行机制&lt;/h4&gt;&#xA;&lt;p&gt;WP Githuber MD会将您的Markdown内容保存到 wp_posts.post_content_filtered&lt;br&gt;&#xA;将Markdown解析为HTML，将解析后的HTML内容保存到 wp_posts.post_content&lt;br&gt;&#xA;该插件将检测您的Markdown内容并决定要加载哪些脚本，以避免加载不必要的脚本。例如，如果启用了代码语法高亮，则必须再次更新您的文章才能生效&lt;/p&gt;&#xA;&lt;h4 id=&#34;安装方式&#34;&gt;安装方式&lt;/h4&gt;&#xA;&lt;p&gt;后台搜索WP Githuber MD下载安装后启用就行&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.wpdaxue.com/wp-githuber-md-wordpress-markdown-editor.html&#34; title=&#34;点击前往编辑器&#34;&gt;点击前往编辑器&lt;/a&gt;{.wp-editor-md-post-content-link}&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>武汉加油，中国加油</title>
+      <link>/434.html</link>
+      <pubDate>Thu, 27 Feb 2020 10:01:52 +0800</pubDate>
+      <guid>/434.html</guid>
+      <description>&lt;!-- raw HTML omitted --&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;!-- raw HTML omitted --&gt;</description>
+    </item>
+  </channel>
+</rss>

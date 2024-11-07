@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>甲骨文 on </title>
+    <link>/tags/%E7%94%B2%E9%AA%A8%E6%96%87/</link>
+    <description>Recent content in 甲骨文 on </description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 27 Apr 2020 06:21:05 +0800</lastBuildDate>
+    <atom:link href="/tags/%E7%94%B2%E9%AA%A8%E6%96%87/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Oracle数据导入导出</title>
+      <link>/2330.html</link>
+      <pubDate>Mon, 27 Apr 2020 06:21:05 +0800</pubDate>
+      <guid>/2330.html</guid>
+      <description>&lt;p&gt;这几天遇到个oracle数据库需要导出导导入的问题；记录一下步骤&lt;br&gt;&#xA;windows下导出脚本，也可以做备份脚本：&lt;/p&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;h4 id=&#34;导入步骤记录&#34;&gt;导入步骤记录：&lt;/h4&gt;&#xA;&lt;p&gt;一开始没有注意导入数据库数据时数据库的字符集问题，导致问题一堆&lt;br&gt;&#xA;查看数据库字符集：&lt;/p&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;h4 id=&#34;客户端字符集&#34;&gt;客户端字符集：&lt;/h4&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;h4 id=&#34;会话字符集vnls_parameters&#34;&gt;会话字符集（v$nls_parameters）&lt;/h4&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;h4 id=&#34;数据导入&#34;&gt;数据导入&lt;/h4&gt;&#xA;&lt;p&gt;需要先建立表空间及授权用户&lt;br&gt;&#xA;我这里备份有建表sql语句所以只执行sql就ok了&lt;/p&gt;&#xA;&lt;h4 id=&#34;执行sql语句&#34;&gt;执行sql语句：&lt;/h4&gt;&#xA;&lt;p&gt;登录数据库：&lt;br&gt;&#xA;sqlplus system/密码&lt;br&gt;&#xA;登录数据库后输入：&lt;br&gt;&#xA;@sql脚本绝对路径即可执行&lt;/p&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;p&gt;imp 用户名/密码@库名 full=y file=dmp绝对路径 ignore=y&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

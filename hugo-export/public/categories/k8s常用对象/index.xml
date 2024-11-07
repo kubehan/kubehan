@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>K8s常用对象 on </title>
+    <link>/categories/k8s%E5%B8%B8%E7%94%A8%E5%AF%B9%E8%B1%A1/</link>
+    <description>Recent content in K8s常用对象 on </description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 27 Mar 2020 09:55:48 +0800</lastBuildDate>
+    <atom:link href="/categories/k8s%E5%B8%B8%E7%94%A8%E5%AF%B9%E8%B1%A1/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Kubernetes主机和容器的监控方案</title>
+      <link>/2019.html</link>
+      <pubDate>Fri, 27 Mar 2020 09:55:48 +0800</pubDate>
+      <guid>/2019.html</guid>
+      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;strong&gt;摘要&lt;/strong&gt;：随着Docker容器云的广泛应用，大量的业务软件运行在容器中，这使得对docker容器的监控越来越重要。传统的监控系统大多数是针对物理机或者虚拟机设计的，而容器的特点不同与传统的物理机或者虚拟机，如果还是采用传统的监控系统，则会增加监控复杂程度，那么如何对容器进行监控呢？&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;大家晚上好，今天很高兴能在这里和大家一起交流和分享在工作中的一些经验和总结。都知道监控在运维体系乃至产品的整个生命中期都是重要的一个环节，针对不同的应用场景，监控方案也会有很大的不同。本次就和大家分享一下我在开发我们公司新产品ufleet的监控模块时的一些技术总结，如果有错误的地方，欢迎大家指出。主要内容有:&lt;/p&gt;&#xA;&lt;p&gt;1.数据的采集方式&lt;/p&gt;&#xA;&lt;p&gt;2.监控原理&lt;/p&gt;&#xA;&lt;p&gt;3.容器的监控方案&lt;/p&gt;&#xA;&lt;p&gt;4.kubernetes上的主机和容器的监控&lt;/p&gt;&#xA;&lt;p&gt;5.监控工具的对比&lt;/p&gt;&#xA;&lt;p&gt;一个完整的监控体系包括：采集数据、分析存储数据、展示数据、告警以及自动化处理、监控工具自身的安全机制，接下来会对数据的采集和监控原理深入讲解，其他部分会在一些架构中穿插讲解。&lt;/p&gt;&#xA;&lt;h2 id=&#34;一-数据的采集方式&#34;&gt;一 、数据的采集方式&lt;/h2&gt;&#xA;&lt;p&gt;1.命令行方式。比如在linux系统上使用top，vmstat，netstat写一些shell脚本进行数据的采集，再把数据存储在文本文件中进行处理。&lt;/p&gt;&#xA;&lt;p&gt;2.嵌入式。通过在进程中运行agent的方式获取应用的状态。如目前的APM产品都是通过将监控工具嵌入到应用内部进行数据采集。&lt;/p&gt;&#xA;&lt;p&gt;3.主动输出。提前在应用中埋点，应用主动上报。比如一些应用系统的业务状态，可以通过在日志中主动输出状态用于采集。&lt;/p&gt;&#xA;&lt;p&gt;4.旁路式。通过外部获取的方式采集数据。比如对网站url的探测，模拟业务的报文 ，对服务器的ping，流量的监控。可以通过在交换机上将流量进行端口复制，将源始流量复制到另一个端口后再进行处理，这样这业务系统是完全没有侵入。&lt;/p&gt;&#xA;&lt;p&gt;5.远程接入。通过对应用进程接口调用获取应用的状态。比如使用JMX的方式连接到java进程中，对进程的状态进行采集。&lt;/p&gt;&#xA;&lt;p&gt;6.入侵式。不同于嵌入式，入侵式的agent是独立运行的进程，而不是运行在进程中。这个目前监控工具比较常用的方式，比如zabbix，在主机上运行一个进程进行相关数据的采集。&lt;/p&gt;&#xA;&lt;h2 id=&#34;二监控原理&#34;&gt;二、监控原理&lt;/h2&gt;&#xA;&lt;p&gt;具体监控指标总结如下：&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;首先是容器本身资源使用情况：cpu，内存，网络，磁盘&lt;/li&gt;&#xA;&lt;li&gt;物理机的资源使用情况：cpu，内存，网络，磁盘&lt;/li&gt;&#xA;&lt;li&gt;物理机上容器镜像情况，名字，大小，版本。&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;1主机的监控&#34;&gt;1.主机的监控&lt;/h3&gt;&#xA;&lt;p&gt;&lt;strong&gt;（1）Cpu数据&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;使用top命令可以查看当前cpu使用情况，源文件来自/proc/stat&lt;/p&gt;&#xA;&lt;p&gt;采样两个足够短的时间间隔的Cpu快照，分别记作t1,t2，其中t1、t2的结构均为：&lt;/p&gt;&#xA;&lt;p&gt;(user、nice、system、idle、iowait、irq、softirq、stealstolen、guest)的9元组;&lt;/p&gt;&#xA;&lt;p&gt;a) 计算总的Cpu时间片totalCpuTime&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;把第一次的所有cpu使用情况求和，得到s1;&lt;/li&gt;&#xA;&lt;li&gt;把第二次的所有cpu使用情况求和，得到s2;&lt;/li&gt;&#xA;&lt;li&gt;s2 – s1得到这个时间间隔内的所有时间片，即totalCpuTime = j2 – j1 ;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;b) 计算空闲时间idle&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;idle对应第四列的数据，用第二次的第四列- 第一次的第四列即可&lt;/li&gt;&#xA;&lt;li&gt;idle=第二次的第四列- 第一次的第四列&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;c) 计算cpu使用率&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;pcpu =100* (total-idle)/total&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;（2）linux内存监控&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;使用free命令可以查看当前内存使用情况。&lt;/p&gt;&#xA;&lt;p&gt;其数据来源是来自/proc/meminfo文件&lt;/p&gt;&#xA;&lt;p&gt;常用的计算公式：&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;real_used = used_mem – buffer – cache&lt;/p&gt;&#xA;&lt;p&gt;real_free = free_mem + buffer + cache&lt;/p&gt;&#xA;&lt;p&gt;total_mem = used_mem + free_mem&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

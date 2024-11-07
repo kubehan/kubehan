@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Jumpserver on </title>
+    <link>/tags/jumpserver/</link>
+    <description>Recent content in Jumpserver on </description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 22 Mar 2020 03:18:55 +0800</lastBuildDate>
+    <atom:link href="/tags/jumpserver/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Centos下堡垒机Jumpserver V3.0环境部署完整记录-安装篇</title>
+      <link>/1157.html</link>
+      <pubDate>Sun, 22 Mar 2020 03:18:55 +0800</pubDate>
+      <guid>/1157.html</guid>
+      <description>&lt;!-- raw HTML omitted --&gt;</description>
+    </item>
+  </channel>
+</rss>
